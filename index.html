@@ -21,6 +21,10 @@
     </header>
 
     <h2 class="tit-sec">Seção Foto</h2>
+
+    <div>
+        <button>CLICK</button>
+    </div>
  
     <section class="conteudo">
         <div>
@@ -79,6 +83,16 @@
 
     </footer>
 
+    <script>
+        const botoes = document.querySelectorAll("button")
+        botoes.forEach( (botao) => {
+            if(botao.textContent == "CLICK") {
+                botao.addEventListener("click", () => {
+                    alert("oi")
+                })
+            }
+        });
+    </script>
 </body>
 
 </html>
